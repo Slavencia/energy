@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../../static/css/style.css">
+<header class="header">
+    <div class="header__text">
+        <h1>Расчет окончен!</h1>
+        <p>Ваши данные будут проданы!</p>
+      </div>
+</header>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Результаты формы</title>
+</head>
+<body>
+{% block content %}
+
+    <h1>Спасибо за заполнение формы! </h1>
+    <p>Ваше имя: {{name}}</p>
+    <p>Ваша электронная почта: {{email}}</p>
+    <p>Baш aдpec: {{address}}</p>
+    <p>Ваша дата: {{date}}</p>
+
+{% endblock %}
+</body>
+</html>
